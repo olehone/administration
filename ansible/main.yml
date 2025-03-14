@@ -4,3 +4,10 @@
   become: yes
   roles:
     - dummy_role
+- name: Install package on remote hosts
+  hosts: all
+  become: yes
+  roles:
+    - install_package
+  vars:
+    package_name: "{{ package_name }}"

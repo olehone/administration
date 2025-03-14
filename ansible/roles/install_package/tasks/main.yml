@@ -1,0 +1,12 @@
+---
+- name: Install package using apt (Debian/Ubuntu)
+  ansible.builtin.apt:
+    name: "{{ package_name }}"
+    state: present
+  when: ansible_os_family == 'Debian'
+
+- name: Install package using yum (RedHat/CentOS)
+  ansible.builtin.yum:
+    name: "{{ package_name }}"
+    state: present
+  when: ansible_os_family == 'RedHat'
