@@ -1,0 +1,6 @@
+---
+- name: Update hostname on all hosts
+  hosts: all
+  become: yes
+  roles:
+    - dummy_role

@@ -1,0 +1,4 @@
+---
+- name: Set the new hostname
+  ansible.builtin.hostname:
+    name: "oleh-volodko-lab2"
