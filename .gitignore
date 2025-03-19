@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.log
+
+*.retry
+*.vault
+!group_vars/
+!host_vars/
+!inventory/
+secrets.yml
+*.cfg
+
+*README.md
