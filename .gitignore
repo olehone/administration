@@ -13,5 +13,3 @@ Thumbs.db
 !inventory/
 secrets.yml
 *.cfg
-
-*README.md
